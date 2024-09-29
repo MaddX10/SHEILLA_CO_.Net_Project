@@ -91,5 +91,13 @@ namespace SHEILLA_COMPANY
             }
         }
 
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            // Show the logout message
+            MessageBox.Show("Logout successfully", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Exit the application
+            Application.Exit();
+        }
     }
 }

@@ -40,6 +40,7 @@
             this.LandTypeTxt = new System.Windows.Forms.ComboBox();
             this.LandDescriptionTxt = new System.Windows.Forms.RichTextBox();
             this.BtnSaveLandDetails = new System.Windows.Forms.Button();
+            this.logoutBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -145,7 +146,7 @@
             // 
             this.BtnSaveLandDetails.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnSaveLandDetails.ForeColor = System.Drawing.Color.White;
-            this.BtnSaveLandDetails.Location = new System.Drawing.Point(323, 334);
+            this.BtnSaveLandDetails.Location = new System.Drawing.Point(325, 321);
             this.BtnSaveLandDetails.Name = "BtnSaveLandDetails";
             this.BtnSaveLandDetails.Size = new System.Drawing.Size(166, 39);
             this.BtnSaveLandDetails.TabIndex = 11;
@@ -153,11 +154,24 @@
             this.BtnSaveLandDetails.UseVisualStyleBackColor = false;
             this.BtnSaveLandDetails.Click += new System.EventHandler(this.BtnSaveLandDetails_Click);
             // 
+            // logoutBtn
+            // 
+            this.logoutBtn.BackColor = System.Drawing.Color.Red;
+            this.logoutBtn.ForeColor = System.Drawing.Color.White;
+            this.logoutBtn.Location = new System.Drawing.Point(693, 18);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(95, 39);
+            this.logoutBtn.TabIndex = 12;
+            this.logoutBtn.Text = "LOGOUT";
+            this.logoutBtn.UseVisualStyleBackColor = false;
+            this.logoutBtn.Click += new System.EventHandler(this.BtnLogout_Click);
+            // 
             // landMGMT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.BtnSaveLandDetails);
             this.Controls.Add(this.LandDescriptionTxt);
             this.Controls.Add(this.LandTypeTxt);
@@ -192,5 +206,6 @@
         private System.Windows.Forms.ComboBox LandTypeTxt;
         private System.Windows.Forms.RichTextBox LandDescriptionTxt;
         private System.Windows.Forms.Button BtnSaveLandDetails;
+        private System.Windows.Forms.Button logoutBtn;
     }
 }
